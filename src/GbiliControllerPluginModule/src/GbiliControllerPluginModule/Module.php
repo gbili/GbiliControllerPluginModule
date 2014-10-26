@@ -1,5 +1,5 @@
 <?php
-namespace GbiliViewHelper;
+namespace GbiliControllerPluginModule;
 
 class Module 
 {
