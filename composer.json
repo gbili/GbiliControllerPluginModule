@@ -1,0 +1,36 @@
+{
+    "name":        "gbili/gbili-controller-plugin-module",
+    "description": "Zend Framework 2 Module that provides view helpers",
+    "type":        "library",
+    "license":     "MIT",
+    "homepage":    "http://gbili.com",
+    "keywords":    [
+        "view helper",
+        "module",
+        "zf2"
+    ],
+    "repositories": [
+        {
+            "type":"vcs",
+            "url":"https://github.com/gbili/gfw"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "gbili/gfw": "dev-master",
+        "php": ">=5.3.3"
+    },
+    "require-dev": {
+        "zendframework/zendframework": "~2.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "GbiliControllerPluginModule\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    }
+}
