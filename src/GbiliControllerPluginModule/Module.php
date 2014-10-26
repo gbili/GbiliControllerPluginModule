@@ -1,2 +1,2 @@
 <?php
-require_once __DIR__ . '/src/GbiliViewHelper/Module.php';
+require_once __DIR__ . '/src/GbiliControllerPluginModule/Module.php';
