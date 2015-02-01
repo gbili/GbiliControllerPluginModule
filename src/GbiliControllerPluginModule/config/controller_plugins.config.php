@@ -19,7 +19,9 @@ return array(
             $sm = $controllerPluginManager->getServiceLocator();
             $plugin = new Controller\Plugin\Repository;
             $config = $sm->get('Config');
-            $plugin->setPreparationCallbacks($config['controller_plugin_repository']['preparation_callbacks']);
+            if (isset($config['controller_plugin_repository']['preparation_callbacks'])) {
+                $plugin->setPreparationCallbacks($config['controller_plugin_repository']['preparation_callbacks']);
+            }
             return $plugin;
         },
     ),
